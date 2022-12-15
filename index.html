@@ -6,12 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV_Berezhnov</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/assets/favicon.ico">
   </head>
   <body>
+    <header class="header">
+      <nav class="nav">
+        <ul class="nav__list">
+          <li><a href="#Contacts">Contacts</a></li>
+          <li><a href="#Summary">Summary</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Code">Code</a></li>
+          <li><a href="#Language">Language</a></li>
+          <li><a href="#Education">Education</a></li>
+        </ul>
+      </nav>
+      <div class="person">
+        <div class="info">
+          <img src="./assets/cv.jpg" alt="foto" class="round">
+        </div>
+        <div class="content">
+          <h1>Berezhnov Egor</h1>
+          <h2>Junior Frontend Developer</h2>
+        </div>
+      </div>
+    </header>
     <main class="wrapper">
       <div class="info">
-        <img src="./img/cv.jpg" alt="foto" class="round">
-        <span class="reverse-span">Contacts</span>
+        <h2 id="Contacts" class="reverse-h2">Contacts</h2>
         <ul>
           <li>Location: Samsum, Turkey</li>
           <li>
@@ -33,7 +54,7 @@
             <a href="https://github.com/ygrcore" target="_blank">Github</a>
           </li>
         </ul>
-        <span class="reverse-span">Skills</span>
+        <h2 id="Skills" class="reverse-h2">Skills</h2>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
@@ -41,16 +62,14 @@
           <li>JavaScript</li>
           <li>React</li>
         </ul>
-        <span class="reverse-span">Languages</span>
+        <h2 id="Language" class="reverse-h2">Languages</h2>
         <ul>
           <li>Russian - Native</li>
           <li>English - A2/B1 = Pre-Intermediate</li>
         </ul>
       </div>
       <div class="content">
-        <h1>Berezhnov Egor</h1>
-        <h2>Junior Frontend Developer</h2>
-        <span>About me</span>
+        <h2 id="Summary">Summary</h2>
         <p>
           I started studying front-end development in 2021 in Rolling Scopes
           School from stage#0. At that time, I had absolutely no skills in HTML,
@@ -64,12 +83,11 @@
           then you start to understand programming and have people you can
           discuss it with.
         </p>
-        <span>Code Example</span>
-        <code>
-          function capitalizeWord(word) { return word.slice(0, 1).toUpperCase()
-          + word.slice(1) }
-        </code>
-        <span> Education</span>
+        <h2 id="Code">Code Example</h2>
+        <code class="code">function capitalizeWord(word) {
+          return word.slice(0, 1).toUpperCase() + word.slice(1)
+        }</code>
+        <h2 id="Education">Education</h2>
         <ul>
           <li>
             Saint Petersburg State Institute of Technology (Technical
@@ -92,10 +110,10 @@
             width="100"
             alt="rs school courses">
         </a>
-        <span>2022</span>
+        <span><b>2022</b></span>
         <a href="https://github.com/ygrcore" target="_blank">
           <img
-            src="./img/icons8-github-120.svg"
+            src="./assets/icons8-github-120.svg"
             width="100"
             height="200"
             alt="github">
