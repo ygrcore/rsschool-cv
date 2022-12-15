@@ -1,3 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -37,6 +40,13 @@ body {
 a {
     text-decoration: none;
     color: currentColor;
+    transition: color 0.5s;
+}
+.nav__list a:hover {
+    color: #ebe3e0;
+}
+a:hover {
+    color: rgba(255, 130, 53);
 }
 p, h2 {
     padding-left: 10px;
@@ -91,4 +101,8 @@ h2 {
 }
 img {
     padding: 10px;
+    transition: opacity 0.5s;
+}
+.links img:hover {
+    opacity: .5;
 }
